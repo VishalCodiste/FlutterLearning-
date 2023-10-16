@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutterlearning/Widgets/Themes.dart';
 import 'package:flutterlearning/utils/routs.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'Pages/login_page.dart'; // Adjust the path as needed
-import 'Pages/home_page.dart'; // Adjust the path as needed
+import 'pages/login_page.dart'; // Adjust the path as needed
+import 'pages/home_page.dart'; // Adjust the path as needed
 
 void main() {
   runApp(MyApp());
@@ -15,10 +15,8 @@ class MyApp extends StatelessWidget {
       // home: HomePage(),
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
-      theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
-        fontFamily: GoogleFonts.lato().fontFamily,
-        ),
+      theme: MyTheme.lightTheme,
+        initialRoute: MyRouts.homePage,
       routes: {
         "/": (context) => LoginPage(),
         MyRouts.homePage: (context) => HomePage(),
