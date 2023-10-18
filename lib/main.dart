@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterlearning/Widgets/Themes.dart';
-import 'package:flutterlearning/utils/routs.dart';
+import 'package:flutterlearning/pages/cart_page.dart';
+import 'package:flutterlearning/models/utils/routs.dart';
 import 'pages/login_page.dart'; // Adjust the path as needed
 import 'pages/home_page.dart'; // Adjust the path as needed
 
@@ -14,13 +15,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       // home: HomePage(),
       debugShowCheckedModeBanner: false,
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.system,
       theme: MyTheme.lightTheme,
-        initialRoute: MyRouts.homePage,
+      initialRoute: MyRouts.homePage,
       routes: {
-        "/": (context) => LoginPage(),
+        "/": (context) => HomePage(),
         MyRouts.homePage: (context) => HomePage(),
         MyRouts.loginPage: (context) => LoginPage(),
+        MyRouts.cartPage: (context) => Cartpage(),
       },
     );
   }

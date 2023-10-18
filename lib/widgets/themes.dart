@@ -9,14 +9,19 @@ class MyTheme {
         color: Colors.white,
         elevation: 0.5,
         iconTheme: IconThemeData(color: Colors.black),
+        foregroundColor: Colors.black,
       ));
 
-  // static ThemeData get darkTheme => ThemeData(
-  //     primarySwatch: Colors.deepPurple,
-  //     fontFamily: GoogleFonts.lato().fontFamily,
-  //     appBarTheme: const AppBarTheme(
-  //       color: Colors.black,
-  //       elevation: 0.5,
-  //       iconTheme: IconThemeData(color: Colors.white),
-  //     ));
+  static ThemeData get darkTheme => ThemeData(
+      primarySwatch: Colors.deepPurple,
+      fontFamily: GoogleFonts.lato().fontFamily,
+      appBarTheme: const AppBarTheme(
+        color: Colors.black,
+        elevation: 0.5,
+        iconTheme: IconThemeData(color: Colors.white),
+        foregroundColor: Colors.white,
+      ));
+
+  static Color black100 = const Color(0xff000000);
+  static Color white100 = const Color(0xffFFFFFF);
 }

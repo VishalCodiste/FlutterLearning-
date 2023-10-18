@@ -1,0 +1,52 @@
+{
+    "products": [
+        {
+            "id": "001",
+            "name": "iPhone X",
+            "desc": "Best Phone",
+            "price": 399,
+            "color": "#000000",
+            "imageUrl": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-x-new-1.jpg"
+        },
+        {
+            "id": "002",
+            "name": "iPhone XR",
+            "desc": "Best Phone",
+            "price": 399,
+            "color": "#FFFFFF",
+            "imageUrl": "https://images.macrumors.com/t/OzAj4wUmCpwhzkH9KMOfbXK1Y9Q=/400x0/article-new/2018/09/littleiphonexr.jpg?lossy"
+        },
+        {
+            "id": "003",
+            "name": "iPhone 11 PRO",
+            "desc": "Best Phone",
+            "price": 599,
+            "color": "#FFFFFF",
+            "imageUrl": "https://rukminim2.flixcart.com/image/832/832/k2jbyq80pkrrdj/mobile-refurbished/c/u/e/iphone-11-pro-512-u-mwcd2hn-a-apple-0-original-imafkg2fhzhzzh5s.jpeg?q=70"
+        },
+        {
+            "id": "004",
+            "name": "iPhone 12 PRO",
+            "desc": "Best Phone",
+            "price": 799,
+            "color": "#FFFFFF",
+            "imageUrl": "https://m-cdn.phonearena.com/images/phones/80751-940/Apple-iPhone-12-Pro.jpg"
+        },
+        {
+            "id": "005",
+            "name": "iPhone 13 PRO",
+            "desc": "Best Phone",
+            "price": 999,
+            "color": "#FFFFFF",
+            "imageUrl": "https://rukminim2.flixcart.com/image/850/1000/ktketu80/mobile/r/m/8/iphone-13-pro-max-mllj3hn-a-apple-original-imag6vpgphrzuffg.jpeg?q=90"
+        },
+        {
+            "id": "006",
+            "name": "iPhone 14 PRO",
+            "desc": "Best Phone",
+            "price": 1199,
+            "color": "#FFFFFF",
+            "imageUrl": "https://m.media-amazon.com/images/I/61HHS0HrjpL._AC_UF1000,1000_QL80_.jpg"
+        }
+    ]
+}

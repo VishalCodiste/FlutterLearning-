@@ -1,7 +1,7 @@
 // ignore_for_file: avoid_print
 
 import 'package:flutter/material.dart';
-import 'package:flutterlearning/utils/routs.dart';
+import 'package:flutterlearning/models/utils/routs.dart';
 
 class LoginPage extends StatefulWidget {
   @override

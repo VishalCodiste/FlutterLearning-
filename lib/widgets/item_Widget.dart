@@ -1,7 +1,8 @@
 import 'dart:ffi';
 
 import 'package:flutter/material.dart';
-import 'package:flutterlearning/models/catelog.dart';
+import 'package:flutterlearning/models/catelogModel.dart';
+import 'package:flutterlearning/models/catelogModel.dart';
 
 class ItemWidget extends StatelessWidget {
   final Item item;
