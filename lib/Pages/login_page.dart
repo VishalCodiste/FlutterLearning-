@@ -1,7 +1,7 @@
 // ignore_for_file: avoid_print
 
 import 'package:flutter/material.dart';
-import 'package:flutterlearning/models/utils/routs.dart';
+import 'package:flutterlearning/utils/routes.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -17,13 +17,13 @@ class _LoginPageState extends State<LoginPage> {
     if (_formKey.currentState!.validate()) {
       setState(() {
         changeLoginBtn = true;
-        });
-      await Future.delayed(const Duration(seconds: 1)); 
+      });
+      await Future.delayed(const Duration(seconds: 1));
       // ignore: use_build_context_synchronously
-      await Navigator.pushNamed(context, MyRouts.homePage);
+      await Navigator.pushNamed(context, MyRoutes.homePage);
       setState(() {
         changeLoginBtn = false;
-        });
+      });
     }
   }
 
@@ -55,14 +55,13 @@ class _LoginPageState extends State<LoginPage> {
                     TextFormField(
                       decoration: const InputDecoration(
                           hintText: "Enter username", labelText: "Username"),
-                          validator: (value) {
-                            if (value!.isEmpty) {
-                              return "Username can not be empty";
-                            }
+                      validator: (value) {
+                        if (value!.isEmpty) {
+                          return "Username can not be empty";
+                        }
 
-                            return null;
-                          },
-
+                        return null;
+                      },
                       onChanged: (value) {
                         name = value;
                         setState(() {});
@@ -72,16 +71,15 @@ class _LoginPageState extends State<LoginPage> {
                       obscureText: true,
                       decoration: const InputDecoration(
                           hintText: "Enter Password", labelText: "Password"),
-                          validator: (value) {
-                            if (value!.isEmpty) {
-                              return "Psssword can not be empty";
-                            }
-                            else if (value!.length < 6) {
-                              return "Psssword length should be atleaset 6";
-                            }
+                      validator: (value) {
+                        if (value!.isEmpty) {
+                          return "Psssword can not be empty";
+                        } else if (value!.length < 6) {
+                          return "Psssword length should be atleaset 6";
+                        }
 
-                            return null;
-                          },
+                        return null;
+                      },
                     ),
                     const SizedBox(height: 30),
 
